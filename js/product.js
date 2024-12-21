@@ -32,7 +32,6 @@ async function renderProduct() {
         let buyButton = document.createElement("button")
         buyButton.innerText = "Comprar"
         buyButton.addEventListener("click", function(e) {
-            // console.log(e.target.parentNode)
             comprar(producto.title, producto.price, e.target.parentNode)
           })
 
