@@ -24,10 +24,10 @@
         <nav class="navbar fixed-top navbar-expand-lg pt-4 pb-4 ps-3 pe-3">
             <div class="container">
               <a class="navbar-brand fs-2 fw-bold" href="#">Tiendatech</a>
-              <div id="carrito">
+              <a id="carrito" href="pages/carrito.html">
                 <i class="bi bi-cart h1 "></i>
-                <a id="cantidad-carrito">0</a>
-              </div>    
+                <span id="cantidad-carrito">0</span>
+              </a>    
 
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
               <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link fs-5" aria-current="page" href="#productos">Productos</a>
+                    <a class="nav-link fs-5"  href="#productos">Productos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link fs-5" href="#">Home</a>
@@ -48,8 +48,6 @@
             </div>
 
         </div>
-        <!-- <li class="d-flex"> -->
-          <!-- </li> -->
 
     </nav>
     </header>
@@ -77,13 +75,6 @@
             <br>
 
             <div class="flex-container-row">
-                <!-- <div class="flex-item">
-                    <a href="product-template.html"> -->
-                        <!-- <img src="img/campera-marron-costado.webp" alt="campera-marron">
-                        <div class="card-title">Campera verano <br> $25</div> 
-                        <button onclick="myfun()">Comprar</button> -->
-                    <!-- </a>
-                </div> -->
             </div>
         </section>
 
@@ -130,7 +121,6 @@
 
         <!-- seccion contacto  -->
          <section id="contacto">
-            <!-- <br> -->
             <br>
             <h1 class="section-title">Contacto</h1>
             <br>
@@ -156,7 +146,6 @@
                 placeholder="Escriba su mensaje"></textarea>    
                 <button type="submit" class="form-button">Enviar</button>
             </form>    
-            <!-- <br> -->
          </section>
         </div>
     </main>
@@ -174,6 +163,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <script src="js/carrito.js"></script>
+    <script>
+        actualizarContadorCarrito()
+    </script>
 </body>
 </html>
 
