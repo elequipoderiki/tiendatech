@@ -82,10 +82,8 @@ async function getAllData() {
         divButton.classList.add("button-section")
         let cardButton = document.createElement("button")
         cardButton.innerText = "Comprar"
-        // cardButton.innerHTML = 'Comprar <i class="bi bi-cart"></i>'
         cardButton.classList.add("buy-button")
         cardButton.addEventListener("click", function(e) {
-            // console.log(e.target.parentNode)
             comprar(productos[i].title, productos[i].price, e.target.parentNode)
           })
         divButton.appendChild(cardButton)
@@ -93,7 +91,6 @@ async function getAllData() {
 
     }
 }
-
 
 printItems()
 formularioCompleto()
